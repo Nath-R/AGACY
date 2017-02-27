@@ -1,0 +1,1938 @@
+@prefix :      <http://www.semanticweb.org/ramol_na/ontologies/2016/9/untitled-ontology-33#> .
+@prefix AGACY: <http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:b0    a                       AGACY:Action ;
+        AGACY:composedOf        _:b1 , _:b2 , _:b3 ;
+        AGACY:hasValue          "GetMilk" ;
+        AGACY:relatedTime       AGACY:af3dd666-c411-4cd8-b20b-3bc8d9f364fc ;
+        AGACY:uncertaintyLevel  0.9410057056703554 .
+
+_:b4    a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b5 ;
+        AGACY:relatedTime       AGACY:4efadd0b-d2dd-4b77-990f-f301d3273a64 ;
+        AGACY:uncertaintyLevel  0.8443944710172072 .
+
+_:b6    a                       AGACY:Action ;
+        AGACY:composedOf        _:b7 , _:b8 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:d606d36a-77f0-49f4-9ab4-d33b7fc8af8c ;
+        AGACY:uncertaintyLevel  0.9661283905565443 .
+
+_:b9    a                       AGACY:Event ;
+        AGACY:hasValue          "OpenFridge" ;
+        AGACY:partOf            _:b10 , _:b11 , _:b12 ;
+        AGACY:relatedTime       AGACY:99fecd14-c470-48c2-9f19-cb2983a1e6fe ;
+        AGACY:uncertaintyLevel  0.9154686067257245 .
+
+_:b13   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b14 ;
+        AGACY:relatedTime       AGACY:62ade0a2-00e8-4b7f-b76a-e76fb1caffa4 ;
+        AGACY:uncertaintyLevel  0.9333178195520545 .
+
+_:b15   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchBottle" ;
+        AGACY:partOf            _:b16 ;
+        AGACY:relatedTime       AGACY:3768188c-6d75-4cb0-ae6a-c29c78909aee ;
+        AGACY:uncertaintyLevel  0.9737863190982761 .
+
+_:b11   a                       AGACY:Action ;
+        AGACY:composedOf        _:b17 , _:b18 , _:b9 ;
+        AGACY:hasValue          "PutawayCheese" ;
+        AGACY:relatedTime       AGACY:99fecd14-c470-48c2-9f19-cb2983a1e6fe ;
+        AGACY:uncertaintyLevel  0.9154686067257245 .
+
+_:b19   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b20 ;
+        AGACY:relatedTime       AGACY:46bea613-288e-40a7-a420-ef3a4cdf0781 ;
+        AGACY:uncertaintyLevel  0.8177866583231652 .
+
+_:b21   a                       AGACY:Action ;
+        AGACY:composedOf        _:b22 , _:b23 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:efdc9494-7ead-405b-9eb9-852f314a68e6 ;
+        AGACY:uncertaintyLevel  0.8987344106135003 .
+
+_:b24   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b25 , _:b26 ;
+        AGACY:relatedTime       AGACY:9c33e46f-8a13-4a81-8d6d-1d62b23857b0 ;
+        AGACY:uncertaintyLevel  0.9551090040766239 .
+
+_:b27   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b28 ;
+        AGACY:relatedTime       AGACY:afff40d3-1326-4cea-80aa-11279434326e ;
+        AGACY:uncertaintyLevel  0.9644973987988773 .
+
+_:b29   a                       AGACY:Event ;
+        AGACY:hasValue          "CloseFridge" ;
+        AGACY:partOf            _:b30 , _:b16 , _:b31 ;
+        AGACY:relatedTime       AGACY:2f441212-1b8c-412d-9691-2ddf10d2edbf ;
+        AGACY:uncertaintyLevel  0.8320527667534932 .
+
+_:b30   a                       AGACY:Action ;
+        AGACY:composedOf        _:b29 , _:b32 , _:b33 ;
+        AGACY:hasValue          "GetCheese" ;
+        AGACY:relatedTime       AGACY:ff4c65b8-a4fd-46cb-a8e9-4d9cbe267c9f ;
+        AGACY:uncertaintyLevel  0.9379035759956237 .
+
+_:b34   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b35 ;
+        AGACY:relatedTime       AGACY:4fa9db86-34df-4be3-95b4-442612efbee7 ;
+        AGACY:uncertaintyLevel  0.9848823738156223 .
+
+_:b36   a                       AGACY:Action ;
+        AGACY:composedOf        _:b37 , _:b38 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:9fb11a1e-4b8a-40c6-b5ef-c9b34b6fa5df ;
+        AGACY:uncertaintyLevel  0.8218420897117986 .
+
+_:b39   a                       AGACY:Event ;
+        AGACY:hasValue          "CloseDrawer1" ;
+        AGACY:partOf            _:b40 ;
+        AGACY:relatedTime       AGACY:798a457e-03c2-4de0-941f-532f3eab8f21 ;
+        AGACY:uncertaintyLevel  0.899330862333145 .
+
+_:b41   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b42 ;
+        AGACY:relatedTime       AGACY:66ad4541-50e8-48bf-82b7-6ef414c27a59 ;
+        AGACY:uncertaintyLevel  0.9257869994322119 .
+
+_:b23   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b21 ;
+        AGACY:relatedTime       AGACY:efdc9494-7ead-405b-9eb9-852f314a68e6 ;
+        AGACY:uncertaintyLevel  0.8987344106135003 .
+
+_:b43   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b44 ;
+        AGACY:relatedTime       AGACY:34452110-21bb-4cbc-84e6-b7cf17bb6cb7 ;
+        AGACY:uncertaintyLevel  0.8591976644273688 .
+
+_:b45   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b46 ;
+        AGACY:relatedTime       AGACY:27f1b623-5e62-4c36-8b29-53633b80ba68 ;
+        AGACY:uncertaintyLevel  0.8416207395643105 .
+
+_:b31   a                       AGACY:Action ;
+        AGACY:composedOf        _:b29 , _:b47 , _:b33 ;
+        AGACY:hasValue          "GetSalami" ;
+        AGACY:relatedTime       AGACY:ff4c65b8-a4fd-46cb-a8e9-4d9cbe267c9f ;
+        AGACY:uncertaintyLevel  0.9379035759956237 .
+
+_:b48   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenDishwasher" ;
+        AGACY:partOf            _:b49 ;
+        AGACY:relatedTime       AGACY:8f26ea51-c264-4467-b267-2bcb39814c0d ;
+        AGACY:uncertaintyLevel  0.9584676315380177 .
+
+_:b50   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownMilk" ;
+        AGACY:partOf            _:b51 ;
+        AGACY:relatedTime       AGACY:fc099765-70cc-45d9-a1d1-d1dfb80ed13e ;
+        AGACY:uncertaintyLevel  0.8179987966045158 .
+
+_:b52   a                       AGACY:Action ;
+        AGACY:composedOf        _:b53 , _:b54 ;
+        AGACY:hasValue          "GetBread" ;
+        AGACY:relatedTime       AGACY:64da0810-374c-44db-a347-fc47ce723b58 ;
+        AGACY:uncertaintyLevel  0.9260243322793715 .
+
+_:b17   a                       AGACY:Event ;
+        AGACY:hasValue          "CloseFridge" ;
+        AGACY:partOf            _:b10 , _:b11 , _:b12 ;
+        AGACY:relatedTime       AGACY:808e9a9d-3715-4e8c-96d8-9a4598b003f9 ;
+        AGACY:uncertaintyLevel  0.9772135305924476 .
+
+_:b55   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b56 ;
+        AGACY:relatedTime       AGACY:8d7c10c2-2aa0-4566-9bf3-88db371fb96c ;
+        AGACY:uncertaintyLevel  0.9562402695866213 .
+
+_:b57   a                       AGACY:Action ;
+        AGACY:composedOf        _:b58 , _:b59 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:804ea0ef-11b3-45e9-882d-80ddf73d631d ;
+        AGACY:uncertaintyLevel  0.9116020269131719 .
+
+_:b60   a                       AGACY:Action ;
+        AGACY:composedOf        _:b61 , _:b62 , _:b63 ;
+        AGACY:hasValue          "PutSugar" ;
+        AGACY:relatedTime       AGACY:ac5abeeb-d0ad-48dd-a223-dfb95fe55a5a ;
+        AGACY:uncertaintyLevel  0.9787859637649293 .
+
+_:b64   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b65 ;
+        AGACY:relatedTime       AGACY:2a2ef9b8-519e-4ac1-93fe-f15f016a8b56 ;
+        AGACY:uncertaintyLevel  0.8783092417320748 .
+
+_:b62   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchSpoon" ;
+        AGACY:partOf            _:b60 ;
+        AGACY:relatedTime       AGACY:86bea229-d2ae-4510-a0b5-174b196559af ;
+        AGACY:uncertaintyLevel  0.9172222958573208 .
+
+_:b22   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b21 ;
+        AGACY:relatedTime       AGACY:3d7dd66b-82ea-4313-9702-34fa8a844cb7 ;
+        AGACY:uncertaintyLevel  0.9688185404704902 .
+
+_:b66   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenDrawer2" ;
+        AGACY:partOf            _:b67 ;
+        AGACY:relatedTime       AGACY:3dfd7883-ac0c-4070-9b0e-fd5d5c044c9b ;
+        AGACY:uncertaintyLevel  0.8738041155423739 .
+
+_:b38   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b36 ;
+        AGACY:relatedTime       AGACY:9fb11a1e-4b8a-40c6-b5ef-c9b34b6fa5df ;
+        AGACY:uncertaintyLevel  0.8218420897117986 .
+
+_:b67   a                       AGACY:Action ;
+        AGACY:composedOf        _:b68 , _:b66 ;
+        AGACY:hasValue          "GetPlate" ;
+        AGACY:relatedTime       AGACY:3dfd7883-ac0c-4070-9b0e-fd5d5c044c9b ;
+        AGACY:uncertaintyLevel  0.8738041155423739 .
+
+_:b69   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b70 ;
+        AGACY:relatedTime       AGACY:27581547-f6c9-4cd9-99b8-0a3621ac6ffb ;
+        AGACY:uncertaintyLevel  0.8429810041770358 .
+
+_:b26   a                       AGACY:Action ;
+        AGACY:composedOf        _:b24 , _:b71 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:a73e1780-1e9b-408e-8b1f-32839329c49e ;
+        AGACY:uncertaintyLevel  0.8753710195782269 .
+
+_:b28   a                       AGACY:Action ;
+        AGACY:composedOf        _:b27 , _:b72 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:67bebe77-88b4-49b6-a5f9-bd760e2b96c9 ;
+        AGACY:uncertaintyLevel  0.9274623944879596 .
+
+_:b3    a                       AGACY:Event ;
+        AGACY:hasValue          "OpenFridge" ;
+        AGACY:partOf            _:b0 ;
+        AGACY:relatedTime       AGACY:af3dd666-c411-4cd8-b20b-3bc8d9f364fc ;
+        AGACY:uncertaintyLevel  0.9410057056703554 .
+
+_:b73   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b74 ;
+        AGACY:relatedTime       AGACY:e0f50d2f-db47-49bb-9e52-9c42cabf8ce6 ;
+        AGACY:uncertaintyLevel  0.8804585349869932 .
+
+_:b16   a                       AGACY:Action ;
+        AGACY:composedOf        _:b29 , _:b15 , _:b33 ;
+        AGACY:hasValue          "GetBottle" ;
+        AGACY:relatedTime       AGACY:ff4c65b8-a4fd-46cb-a8e9-4d9cbe267c9f ;
+        AGACY:uncertaintyLevel  0.9379035759956237 .
+
+_:b75   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownSalami" ;
+        AGACY:partOf            _:b10 ;
+        AGACY:relatedTime       AGACY:3b8361f9-e70e-4f7b-be26-7492233e77c1 ;
+        AGACY:uncertaintyLevel  0.9018993234672196 .
+
+_:b63   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchSugar" ;
+        AGACY:partOf            _:b60 ;
+        AGACY:relatedTime       AGACY:ac5abeeb-d0ad-48dd-a223-dfb95fe55a5a ;
+        AGACY:uncertaintyLevel  0.9787859637649293 .
+
+_:b32   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCheese" ;
+        AGACY:partOf            _:b30 ;
+        AGACY:relatedTime       AGACY:ad1513e7-d084-435b-bf2c-2f9c928abdc6 ;
+        AGACY:uncertaintyLevel  0.9858311360739924 .
+
+_:b20   a                       AGACY:Action ;
+        AGACY:composedOf        _:b19 , _:b76 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:813b7e88-093a-4cac-ac93-d1228fa08796 ;
+        AGACY:uncertaintyLevel  0.8030451512324985 .
+
+_:b77   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b78 ;
+        AGACY:relatedTime       AGACY:e7755aab-ac40-4b8e-8714-2ddebe013f83 ;
+        AGACY:uncertaintyLevel  0.9886758438144495 .
+
+_:b44   a                       AGACY:Action ;
+        AGACY:composedOf        _:b43 , _:b79 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:220293e2-b7d1-4b54-908c-218e6733d25f ;
+        AGACY:uncertaintyLevel  0.9677772780821032 .
+
+_:b8    a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b6 ;
+        AGACY:relatedTime       AGACY:d606d36a-77f0-49f4-9ab4-d33b7fc8af8c ;
+        AGACY:uncertaintyLevel  0.9661283905565443 .
+
+_:b71   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b26 , _:b80 ;
+        AGACY:relatedTime       AGACY:a73e1780-1e9b-408e-8b1f-32839329c49e ;
+        AGACY:uncertaintyLevel  0.8753710195782269 .
+
+_:b81   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b82 ;
+        AGACY:relatedTime       AGACY:683ff765-a91a-417d-b4c0-10f746d3b2dc ;
+        AGACY:uncertaintyLevel  0.8415248091872046 .
+
+_:b10   a                       AGACY:Action ;
+        AGACY:composedOf        _:b17 , _:b75 , _:b9 ;
+        AGACY:hasValue          "PutawaySalami" ;
+        AGACY:relatedTime       AGACY:99fecd14-c470-48c2-9f19-cb2983a1e6fe ;
+        AGACY:uncertaintyLevel  0.9154686067257245 .
+
+_:b2    a                       AGACY:Event ;
+        AGACY:hasValue          "FetchMilk" ;
+        AGACY:partOf            _:b0 ;
+        AGACY:relatedTime       AGACY:6bec6a35-3679-46e6-9f7e-25a650454964 ;
+        AGACY:uncertaintyLevel  0.8153744246555884 .
+
+_:b83   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b35 ;
+        AGACY:relatedTime       AGACY:8e85e4c6-b3b6-4f0e-8238-55947fdcbda2 ;
+        AGACY:uncertaintyLevel  0.9314390845943809 .
+
+_:b25   a                       AGACY:Action ;
+        AGACY:composedOf        _:b24 , _:b84 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:d1cdaed2-5598-456b-b3c8-1050b8e94390 ;
+        AGACY:uncertaintyLevel  0.8782047453268244 .
+
+_:b78   a                       AGACY:Action ;
+        AGACY:composedOf        _:b85 , _:b77 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:e7755aab-ac40-4b8e-8714-2ddebe013f83 ;
+        AGACY:uncertaintyLevel  0.9886758438144495 .
+
+_:b86   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b42 ;
+        AGACY:relatedTime       AGACY:dcc2424f-b215-4d63-bd90-5b8373ed3595 ;
+        AGACY:uncertaintyLevel  0.8593361754342864 .
+
+_:b18   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCheese" ;
+        AGACY:partOf            _:b11 ;
+        AGACY:relatedTime       AGACY:af924db9-37f9-4458-b9d1-8f00e4cee3d1 ;
+        AGACY:uncertaintyLevel  0.9174946536101768 .
+
+_:b87   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b46 ;
+        AGACY:relatedTime       AGACY:c217f3d6-04b6-422e-9a92-1a11367b0d46 ;
+        AGACY:uncertaintyLevel  0.8827799402785916 .
+
+_:b88   a                       AGACY:Event ;
+        AGACY:hasValue          "CloseFridge" ;
+        AGACY:partOf            _:b51 ;
+        AGACY:relatedTime       AGACY:12efc7df-4357-48fa-a53c-70ebef7dabbf ;
+        AGACY:uncertaintyLevel  0.9452080763112114 .
+
+_:b89   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b14 ;
+        AGACY:relatedTime       AGACY:2dece49d-75c0-4070-bb44-d62d32507fdf ;
+        AGACY:uncertaintyLevel  0.9633883544904998 .
+
+_:b70   a                       AGACY:Action ;
+        AGACY:composedOf        _:b90 , _:b69 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:27581547-f6c9-4cd9-99b8-0a3621ac6ffb ;
+        AGACY:uncertaintyLevel  0.8429810041770358 .
+
+_:b91   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b56 ;
+        AGACY:relatedTime       AGACY:284b3bb7-47f4-4c9c-a673-18e53b6c8c3b ;
+        AGACY:uncertaintyLevel  0.8264375724299414 .
+
+_:b92   a                       AGACY:Action ;
+        AGACY:composedOf        _:b93 , _:b94 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:65061498-a05f-4318-a48a-045ce8576fef ;
+        AGACY:uncertaintyLevel  0.91784248445985 .
+
+_:b95   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenDrawer1" ;
+        AGACY:partOf            _:b40 ;
+        AGACY:relatedTime       AGACY:42a62c2a-2d1c-4f74-a94e-0137b9f22d49 ;
+        AGACY:uncertaintyLevel  0.8778167221424091 .
+
+_:b96   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenDrawer3" ;
+        AGACY:partOf            _:b97 ;
+        AGACY:relatedTime       AGACY:98600f5f-9be7-4839-8dc2-9f050942ebe2 ;
+        AGACY:uncertaintyLevel  0.902324201091919 .
+
+_:b82   a                       AGACY:Action ;
+        AGACY:composedOf        _:b98 , _:b81 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:683ff765-a91a-417d-b4c0-10f746d3b2dc ;
+        AGACY:uncertaintyLevel  0.8415248091872046 .
+
+_:b99   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b65 ;
+        AGACY:relatedTime       AGACY:c7c37013-5644-449e-9c42-a9e3c1e206a4 ;
+        AGACY:uncertaintyLevel  0.9630981677402566 .
+
+_:b54   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenDrawer3" ;
+        AGACY:partOf            _:b52 ;
+        AGACY:relatedTime       AGACY:64da0810-374c-44db-a347-fc47ce723b58 ;
+        AGACY:uncertaintyLevel  0.9260243322793715 .
+
+_:b85   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b78 ;
+        AGACY:relatedTime       AGACY:839dfcb3-12a8-4477-9388-40486ed15eaf ;
+        AGACY:uncertaintyLevel  0.8580695237889564 .
+
+_:b93   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b92 ;
+        AGACY:relatedTime       AGACY:cd178ca4-b556-427b-a5ee-539f483ee9ff ;
+        AGACY:uncertaintyLevel  0.987429804036481 .
+
+_:b65   a                       AGACY:Action ;
+        AGACY:composedOf        _:b99 , _:b64 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:2a2ef9b8-519e-4ac1-93fe-f15f016a8b56 ;
+        AGACY:uncertaintyLevel  0.8783092417320748 .
+
+_:b37   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b36 ;
+        AGACY:relatedTime       AGACY:c2435aa3-d5ff-487a-99c8-1c5cac2c1201 ;
+        AGACY:uncertaintyLevel  0.8456395888664844 .
+
+_:b68   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchPlate" ;
+        AGACY:partOf            _:b67 ;
+        AGACY:relatedTime       AGACY:146f0c45-e55b-462b-9235-7cc78c54ad39 ;
+        AGACY:uncertaintyLevel  0.8240917701891346 .
+
+_:b90   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b70 ;
+        AGACY:relatedTime       AGACY:24ff6e05-d8ca-4764-888d-3bdcdb665548 ;
+        AGACY:uncertaintyLevel  0.8633844637855509 .
+
+_:b49   a                       AGACY:Action ;
+        AGACY:composedOf        _:b100 , _:b48 ;
+        AGACY:hasValue          "PutinDishwasher" ;
+        AGACY:relatedTime       AGACY:8f26ea51-c264-4467-b267-2bcb39814c0d ;
+        AGACY:uncertaintyLevel  0.9584676315380177 .
+
+_:b101  a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b5 ;
+        AGACY:relatedTime       AGACY:2369c54e-3359-4d3e-8e80-cbe7eafaca1f ;
+        AGACY:uncertaintyLevel  0.9580015344882433 .
+
+_:b42   a                       AGACY:Action ;
+        AGACY:composedOf        _:b86 , _:b41 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:66ad4541-50e8-48bf-82b7-6ef414c27a59 ;
+        AGACY:uncertaintyLevel  0.9257869994322119 .
+
+_:b100  a                       AGACY:Event ;
+        AGACY:hasValue          "CloseDishwasher" ;
+        AGACY:partOf            _:b49 ;
+        AGACY:relatedTime       AGACY:38a5a04e-8ea6-4b31-8641-6ee0d793a60e ;
+        AGACY:uncertaintyLevel  0.8727449482740519 .
+
+_:b33   a                       AGACY:Event ;
+        AGACY:hasValue          "OpenFridge" ;
+        AGACY:partOf            _:b30 , _:b16 , _:b31 ;
+        AGACY:relatedTime       AGACY:ff4c65b8-a4fd-46cb-a8e9-4d9cbe267c9f ;
+        AGACY:uncertaintyLevel  0.9379035759956237 .
+
+_:b59   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b57 ;
+        AGACY:relatedTime       AGACY:804ea0ef-11b3-45e9-882d-80ddf73d631d ;
+        AGACY:uncertaintyLevel  0.9116020269131719 .
+
+_:b61   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownSugar" ;
+        AGACY:partOf            _:b60 ;
+        AGACY:relatedTime       AGACY:bab98072-e2f7-4c40-8bc1-78c33885d1dc ;
+        AGACY:uncertaintyLevel  0.8413838802684751 .
+
+_:b72   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b28 ;
+        AGACY:relatedTime       AGACY:67bebe77-88b4-49b6-a5f9-bd760e2b96c9 ;
+        AGACY:uncertaintyLevel  0.9274623944879596 .
+
+_:b12   a                       AGACY:Action ;
+        AGACY:composedOf        _:b17 , _:b102 , _:b9 ;
+        AGACY:hasValue          "PutawayBottle" ;
+        AGACY:relatedTime       AGACY:99fecd14-c470-48c2-9f19-cb2983a1e6fe ;
+        AGACY:uncertaintyLevel  0.9154686067257245 .
+
+_:b84   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b25 , _:b103 ;
+        AGACY:relatedTime       AGACY:d1cdaed2-5598-456b-b3c8-1050b8e94390 ;
+        AGACY:uncertaintyLevel  0.8782047453268244 .
+
+_:b47   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchSalami" ;
+        AGACY:partOf            _:b31 ;
+        AGACY:relatedTime       AGACY:e76ce13a-91c4-4cc1-b7ec-2234e2061f77 ;
+        AGACY:uncertaintyLevel  0.8601215410394893 .
+
+_:b35   a                       AGACY:Action ;
+        AGACY:composedOf        _:b83 , _:b34 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:4fa9db86-34df-4be3-95b4-442612efbee7 ;
+        AGACY:uncertaintyLevel  0.9848823738156223 .
+
+_:b56   a                       AGACY:Action ;
+        AGACY:composedOf        _:b91 , _:b55 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:8d7c10c2-2aa0-4566-9bf3-88db371fb96c ;
+        AGACY:uncertaintyLevel  0.9562402695866213 .
+
+_:b7    a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownGlass" ;
+        AGACY:partOf            _:b6 ;
+        AGACY:relatedTime       AGACY:06b1d212-c8fc-4f32-bd38-0342c879ecd0 ;
+        AGACY:uncertaintyLevel  0.9541813696884551 .
+
+_:b5    a                       AGACY:Action ;
+        AGACY:composedOf        _:b4 , _:b101 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:2369c54e-3359-4d3e-8e80-cbe7eafaca1f ;
+        AGACY:uncertaintyLevel  0.9580015344882433 .
+
+_:b104  a                       AGACY:Event ;
+        AGACY:hasValue          "FetchKnifeSalami" ;
+        AGACY:partOf            _:b40 ;
+        AGACY:relatedTime       AGACY:33b6abf8-4b71-404e-b13b-f0d1d9fd3fff ;
+        AGACY:uncertaintyLevel  0.9626202483038935 .
+
+_:b105  a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b103 , _:b80 ;
+        AGACY:relatedTime       AGACY:f3e204cf-7bca-4e61-86aa-8fbb909b0362 ;
+        AGACY:uncertaintyLevel  0.8129968569348623 .
+
+_:b98   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b82 ;
+        AGACY:relatedTime       AGACY:92f986a0-e6ae-4a94-a816-ffd3c899a00b ;
+        AGACY:uncertaintyLevel  0.9097283403015549 .
+
+_:b51   a                       AGACY:Action ;
+        AGACY:composedOf        _:b88 , _:b50 , _:b106 ;
+        AGACY:hasValue          "PutawayMilk" ;
+        AGACY:relatedTime       AGACY:d72ab596-1af9-4581-8d0e-cb3238b6251b ;
+        AGACY:uncertaintyLevel  0.8301001514742224 .
+
+_:b1    a                       AGACY:Event ;
+        AGACY:hasValue          "CloseFridge" ;
+        AGACY:partOf            _:b0 ;
+        AGACY:relatedTime       AGACY:47a864a8-0269-4b2a-9933-7a3ace1b318b ;
+        AGACY:uncertaintyLevel  0.8313296370972287 .
+
+AGACY:hela  a            owl:NamedIndividual , AGACY:Person ;
+        AGACY:hasAction  _:b5 , _:b56 , _:b30 , _:b78 , _:b49 , _:b97 , _:b52 , _:b26 , _:b25 , _:b0 , _:b10 , _:b82 , _:b36 , _:b70 , _:b35 , _:b46 , _:b57 , _:b67 , _:b11 , _:b65 , _:b40 , _:b80 , _:b14 , _:b42 , _:b92 , _:b51 , _:b28 , _:b6 , _:b16 , _:b20 , _:b60 , _:b31 , _:b12 , _:b44 , _:b21 , _:b103 , _:b74 ;
+        AGACY:hasEvent   _:b54 , _:b72 , _:b15 , _:b9 , _:b55 , _:b81 , _:b107 , _:b79 , _:b4 , _:b59 , _:b8 , _:b22 , _:b2 , _:b53 , _:b86 , _:b48 , _:b89 , _:b100 , _:b32 , _:b73 , _:b3 , _:b19 , _:b41 , _:b104 , _:b7 , _:b98 , _:b84 , _:b47 , _:b96 , _:b71 , _:b43 , _:b45 , _:b88 , _:b63 , _:b108 , _:b64 , _:b66 , _:b23 , _:b24 , _:b29 , _:b75 , _:b102 , _:b1 , _:b50 , _:b13 , _:b87 , _:b33 , _:b77 , _:b62 , _:b106 , _:b34 , _:b18 , _:b94 , _:b69 , _:b76 , _:b39 , _:b17 , _:b85 , _:b105 , _:b95 , _:b38 , _:b83 , _:b90 , _:b61 , _:b27 , _:b99 , _:b68 , _:b93 , _:b101 , _:b91 , _:b58 , _:b37 ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeCheese" ;
+                           AGACY:relatedTime       AGACY:229469ff-f6c3-4011-ba2e-0a6d0371bb03 ;
+                           AGACY:uncertaintyLevel  0.9922521421526487
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseFridge" ;
+                           AGACY:relatedTime       AGACY:a344858f-2b4c-4a3a-8c01-49e58ce4c51e ;
+                           AGACY:uncertaintyLevel  0.8932590373916781
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchCheese" ;
+                           AGACY:relatedTime       AGACY:efdbdde5-084a-4ca0-9644-4714f60cf659 ;
+                           AGACY:uncertaintyLevel  0.8600160364791202
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:7428ac76-1f68-431f-86ac-b0b3eb7ff59c ;
+                           AGACY:uncertaintyLevel  0.9718360550264268
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSugar" ;
+                           AGACY:relatedTime       AGACY:2d3764ca-cdac-4fd5-ae59-9254e0401d9b ;
+                           AGACY:uncertaintyLevel  0.852616831203765
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:84f9d97a-b843-4799-a761-09458853b989 ;
+                           AGACY:uncertaintyLevel  0.9702984734787952
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSpoon" ;
+                           AGACY:relatedTime       AGACY:46798243-4644-4562-9b62-7e08e552d600 ;
+                           AGACY:uncertaintyLevel  0.8532494674709408
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:5a8aab6f-4ae1-4e68-94ba-cf91e8bf4cab ;
+                           AGACY:uncertaintyLevel  0.9450754856685166
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSugar" ;
+                           AGACY:relatedTime       AGACY:93345c3b-fc9a-4abb-9cb1-b973ca8544dc ;
+                           AGACY:uncertaintyLevel  0.8009212197791054
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchGlass" ;
+                           AGACY:relatedTime       AGACY:f938583e-2855-4b18-a315-8c49720c87a2 ;
+                           AGACY:uncertaintyLevel  0.8556944026021167
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownGlass" ;
+                           AGACY:relatedTime       AGACY:5516bde8-a8a2-4f6c-a382-d2f4384c2578 ;
+                           AGACY:uncertaintyLevel  0.9562807351670208
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSugar" ;
+                           AGACY:relatedTime       AGACY:d6fdb4d6-a8ac-4394-8b42-3ffbc0aa1cc1 ;
+                           AGACY:uncertaintyLevel  0.9336459057872322
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:63c7bbe1-3649-4a59-bd51-a41d71b99bff ;
+                           AGACY:uncertaintyLevel  0.8650306201773724
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownPlate" ;
+                           AGACY:relatedTime       AGACY:13d83ec8-c907-4d56-a741-38f360715b05 ;
+                           AGACY:uncertaintyLevel  0.9440284784241622
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchMilk" ;
+                           AGACY:relatedTime       AGACY:90fe6223-05dd-4685-9183-3aa03cfffa72 ;
+                           AGACY:uncertaintyLevel  0.9823912817307492
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:054c98ae-948e-44f4-a753-6c184fc9e75d ;
+                           AGACY:uncertaintyLevel  0.8227412265935092
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:70db022b-174b-4e12-b551-1b0539fe5778 ;
+                           AGACY:uncertaintyLevel  0.8888646140389733
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchMilk" ;
+                           AGACY:relatedTime       AGACY:b1e9f065-366c-4d54-b537-bea12975b3dd ;
+                           AGACY:uncertaintyLevel  0.9199928994581902
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:1a3e3c8c-f9a8-401d-90db-778a97149b78 ;
+                           AGACY:uncertaintyLevel  0.965871923578802
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSugar" ;
+                           AGACY:relatedTime       AGACY:c3487781-8fd3-40c4-a395-bc9c2fa2c1ae ;
+                           AGACY:uncertaintyLevel  0.8142532644512899
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:585b7bdb-81a2-455a-976b-653fac9a29f8 ;
+                           AGACY:uncertaintyLevel  0.9531640780589647
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:5da43860-c046-40f2-b879-f218af73f518 ;
+                           AGACY:uncertaintyLevel  0.9836455731901484
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:b84338f7-0e53-43da-af61-868717844e2d ;
+                           AGACY:uncertaintyLevel  0.8088272188496923
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSpoon" ;
+                           AGACY:relatedTime       AGACY:d049b672-ce1f-4e16-b589-66f8a0d671d0 ;
+                           AGACY:uncertaintyLevel  0.9886823509562208
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchGlass" ;
+                           AGACY:relatedTime       AGACY:a4f3cce9-a4c6-4a44-85f8-d1b41ddbf5f0 ;
+                           AGACY:uncertaintyLevel  0.9396228546029061
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer3" ;
+                           AGACY:relatedTime       AGACY:b7d8b551-e700-48d7-a83f-e9ee0debd902 ;
+                           AGACY:uncertaintyLevel  0.9947513766355394
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:734c7c36-0a13-45a4-ac42-ff97b91b7181 ;
+                           AGACY:uncertaintyLevel  0.8767532718051027
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeCheese" ;
+                           AGACY:relatedTime       AGACY:98433e27-e4af-4956-a594-0a3630e3c998 ;
+                           AGACY:uncertaintyLevel  0.84549420015183
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSpoon" ;
+                           AGACY:relatedTime       AGACY:46cf628a-ff5b-4c42-92fd-88c9ac7225a0 ;
+                           AGACY:uncertaintyLevel  0.9683428882100628
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer3" ;
+                           AGACY:relatedTime       AGACY:f0c7681b-1bbc-420f-a171-a1d2401f543f ;
+                           AGACY:uncertaintyLevel  0.8654674770737678
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownCheese" ;
+                           AGACY:relatedTime       AGACY:665d6873-a744-40fc-a1e5-749a9e924751 ;
+                           AGACY:uncertaintyLevel  0.9439360640557428
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSugar" ;
+                           AGACY:relatedTime       AGACY:248f31fc-1ae3-43d4-92ae-7d494248a4ba ;
+                           AGACY:uncertaintyLevel  0.9124855133807129
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:307dcb59-4c9d-4b37-8aa0-7bca7861cde8 ;
+                           AGACY:uncertaintyLevel  0.9457187541480636
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:5e865c70-6f6e-4d2e-8664-b4ca6c04dd46 ;
+                           AGACY:uncertaintyLevel  0.9073126105472927
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSpoon" ;
+                           AGACY:relatedTime       AGACY:e9ab994d-b441-4a1c-b53d-883f45b63972 ;
+                           AGACY:uncertaintyLevel  0.9285007354517216
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeCheese" ;
+                           AGACY:relatedTime       AGACY:f8a739df-69e3-48a2-be65-3be3c2fa4924 ;
+                           AGACY:uncertaintyLevel  0.9925700149625565
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:39b5cf37-d22d-45be-a6b6-820ca469e493 ;
+                           AGACY:uncertaintyLevel  0.9946536266201131
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBottle" ;
+                           AGACY:relatedTime       AGACY:47871524-0b22-4c73-8ae2-764824a5400f ;
+                           AGACY:uncertaintyLevel  0.9669159204189516
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownMilk" ;
+                           AGACY:relatedTime       AGACY:3c388338-3cb6-4fa4-a044-22258c1d181b ;
+                           AGACY:uncertaintyLevel  0.82848918492514
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:352f700c-4221-40ce-b174-615d9d411ef3 ;
+                           AGACY:uncertaintyLevel  0.8060112380990299
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:875fe36d-3807-4f0b-b86e-1ae48eea8e83 ;
+                           AGACY:uncertaintyLevel  0.9636045509389777
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownCheese" ;
+                           AGACY:relatedTime       AGACY:24e14942-7b7d-4c41-a388-2752e3e1f1b8 ;
+                           AGACY:uncertaintyLevel  0.8858005130247142
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchCheese" ;
+                           AGACY:relatedTime       AGACY:6b87fa2e-92ee-4c0b-8bd0-c3350eb30c78 ;
+                           AGACY:uncertaintyLevel  0.928082149847077
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:a0e878fb-0b96-449a-979b-2e645c2a4823 ;
+                           AGACY:uncertaintyLevel  0.8217064324441832
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDrawer3" ;
+                           AGACY:relatedTime       AGACY:f58fec4f-330c-4b88-9b5e-9737100f7fe3 ;
+                           AGACY:uncertaintyLevel  0.9605352632197776
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "SwitchSwitch" ;
+                           AGACY:relatedTime       AGACY:b24d8c2c-1266-49d3-a28e-534b0624ddb4 ;
+                           AGACY:uncertaintyLevel  0.8911250133347751
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchPlate" ;
+                           AGACY:relatedTime       AGACY:f8820f01-fb2f-48d3-b8b0-8b0500455404 ;
+                           AGACY:uncertaintyLevel  0.8712791761757581
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSalami" ;
+                           AGACY:relatedTime       AGACY:bcba108b-332b-49b4-ad21-f548c615734c ;
+                           AGACY:uncertaintyLevel  0.9720305351187346
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchKnifeCheese" ;
+                           AGACY:relatedTime       AGACY:01ae0500-1086-449e-b927-d3a327b36d5d ;
+                           AGACY:uncertaintyLevel  0.8072100685508117
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDishwasher" ;
+                           AGACY:relatedTime       AGACY:aea5af89-47e3-4aec-b559-3b44f41e5a28 ;
+                           AGACY:uncertaintyLevel  0.8174881914860658
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownMilk" ;
+                           AGACY:relatedTime       AGACY:056ec352-03f1-4760-b337-d5f1e8dca566 ;
+                           AGACY:uncertaintyLevel  0.9413948574759329
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:ce247f5a-46b5-406f-a9f6-6326b6ca4380 ;
+                           AGACY:uncertaintyLevel  0.8328556832093577
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "SwitchSwitch" ;
+                           AGACY:relatedTime       AGACY:59e1ba07-4ad1-4a79-bcf5-685b993c33a6 ;
+                           AGACY:uncertaintyLevel  0.906239030991552
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer2" ;
+                           AGACY:relatedTime       AGACY:489f75c0-19ab-434c-a8a9-e7b5793c4289 ;
+                           AGACY:uncertaintyLevel  0.9158509028224201
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeSalami" ;
+                           AGACY:relatedTime       AGACY:c7cedf83-f240-46f6-8309-75ebb2d75546 ;
+                           AGACY:uncertaintyLevel  0.8224892488162084
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:946801ae-8c4d-425f-8ddc-e56b561932da ;
+                           AGACY:uncertaintyLevel  0.9825252443101655
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer3" ;
+                           AGACY:relatedTime       AGACY:7d9d201c-00c6-4cfa-b6dd-96a7cec8b62b ;
+                           AGACY:uncertaintyLevel  0.8359986977398987
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSalami" ;
+                           AGACY:relatedTime       AGACY:941a5933-6e5c-41ce-9aa9-a65dfdac343b ;
+                           AGACY:uncertaintyLevel  0.9846726922499034
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBottle" ;
+                           AGACY:relatedTime       AGACY:a356b945-855c-491b-9eac-81dab3f8b85a ;
+                           AGACY:uncertaintyLevel  0.8998607150838356
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:90f332eb-62f8-4c94-8068-452fabb7e087 ;
+                           AGACY:uncertaintyLevel  0.9660125967162693
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchCup" ;
+                           AGACY:relatedTime       AGACY:bf343c9c-e568-49a2-8c02-c023931f4b10 ;
+                           AGACY:uncertaintyLevel  0.8356839244141345
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer1" ;
+                           AGACY:relatedTime       AGACY:819f08b0-5041-4653-8872-0f2f729a9174 ;
+                           AGACY:uncertaintyLevel  0.9093738916131108
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSpoon" ;
+                           AGACY:relatedTime       AGACY:b33c4b2e-d384-493b-a562-077670e40770 ;
+                           AGACY:uncertaintyLevel  0.864131943976623
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDishwasher" ;
+                           AGACY:relatedTime       AGACY:84a9fd5b-a7c9-479f-a596-35c0781505cd ;
+                           AGACY:uncertaintyLevel  0.9744661480090813
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:508d20de-ee3b-4004-8535-aeace0a4daf5 ;
+                           AGACY:uncertaintyLevel  0.9790068805894232
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownCheese" ;
+                           AGACY:relatedTime       AGACY:f633e4dd-3c7d-4797-8fb0-b0fcf0edd4df ;
+                           AGACY:uncertaintyLevel  0.8174295994820701
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:0516ed0f-1027-43c3-b550-ab9078ff7e03 ;
+                           AGACY:uncertaintyLevel  0.9425687030806315
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchMilk" ;
+                           AGACY:relatedTime       AGACY:0645019b-0cd8-480d-ad9e-64602f0b1342 ;
+                           AGACY:uncertaintyLevel  0.8163473589263452
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:c636e491-3965-42e6-b006-732a3ecca206 ;
+                           AGACY:uncertaintyLevel  0.8070650254295755
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:67721b54-ac81-409e-bad4-7ef7f2ccef5d ;
+                           AGACY:uncertaintyLevel  0.9012871761473055
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CleanTable" ;
+                           AGACY:relatedTime       AGACY:c1d09574-bbe8-4666-bdd8-80c5d35c939f ;
+                           AGACY:uncertaintyLevel  0.9277212357504152
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:6af6bb44-f8b0-49d4-b7e6-99614adb26e1 ;
+                           AGACY:uncertaintyLevel  0.9718913371719623
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchPlate" ;
+                           AGACY:relatedTime       AGACY:db3bdf25-253a-44d0-84bf-83b4c1c5cfad ;
+                           AGACY:uncertaintyLevel  0.9475256215802854
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDrawer1" ;
+                           AGACY:relatedTime       AGACY:e960d7a1-069f-499e-b9da-cab033156ab8 ;
+                           AGACY:uncertaintyLevel  0.9706864778804934
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:22c68385-910f-47dc-9b25-4631e5b569a9 ;
+                           AGACY:uncertaintyLevel  0.8733066118117765
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:dd266229-7cbd-440f-a883-7cfea0d65e8c ;
+                           AGACY:uncertaintyLevel  0.9935281607822083
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBottle" ;
+                           AGACY:relatedTime       AGACY:9d058e01-8448-4c6f-85cb-c2fca182692c ;
+                           AGACY:uncertaintyLevel  0.9130016744013388
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDrawer2" ;
+                           AGACY:relatedTime       AGACY:fbfaa325-5c49-4186-94c3-763fb424d7ca ;
+                           AGACY:uncertaintyLevel  0.8706705785951249
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSugar" ;
+                           AGACY:relatedTime       AGACY:66c46cc1-e7be-48f2-a3dd-3c21c9b4d500 ;
+                           AGACY:uncertaintyLevel  0.8169750585911504
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDrawer2" ;
+                           AGACY:relatedTime       AGACY:6eceea0f-7a1c-4853-85c5-0885bf44bc95 ;
+                           AGACY:uncertaintyLevel  0.8235645428425565
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenFridge" ;
+                           AGACY:relatedTime       AGACY:8ae03701-9b09-4388-84a5-18e30c08472b ;
+                           AGACY:uncertaintyLevel  0.8605328805721588
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:562ccbf1-f810-4a49-9df2-3f6c090b4ba0 ;
+                           AGACY:uncertaintyLevel  0.9344274269596975
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchMilk" ;
+                           AGACY:relatedTime       AGACY:ce096ff5-3f25-45c7-a4bc-1c7585b89d44 ;
+                           AGACY:uncertaintyLevel  0.85544030938774
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownSalami" ;
+                           AGACY:relatedTime       AGACY:934234e1-b0fc-4a35-a1fc-9bfb2ac15e34 ;
+                           AGACY:uncertaintyLevel  0.9782118466480235
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchSalami" ;
+                           AGACY:relatedTime       AGACY:ce55d6eb-84ab-4c44-9dd1-458af5ef2e21 ;
+                           AGACY:uncertaintyLevel  0.9514306015795516
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:70906156-76d8-4abb-8039-1c87f88566ef ;
+                           AGACY:uncertaintyLevel  0.8533442979720065
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownCup" ;
+                           AGACY:relatedTime       AGACY:cf7b758b-4e35-4083-9561-c6b7cfeb9ecf ;
+                           AGACY:uncertaintyLevel  0.8808761043096444
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownPlate" ;
+                           AGACY:relatedTime       AGACY:11d6d2f5-3e2b-4dfc-8143-bac136ab0ddc ;
+                           AGACY:uncertaintyLevel  0.9589888641771896
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "OpenDoor" ;
+                           AGACY:relatedTime       AGACY:688ab729-0a8d-4b24-a79c-381191d79b16 ;
+                           AGACY:uncertaintyLevel  0.848235613903215
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBread" ;
+                           AGACY:relatedTime       AGACY:6b36eeac-341a-4b79-bdc7-5c5d238376ac ;
+                           AGACY:uncertaintyLevel  0.9874323248159746
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownPlate" ;
+                           AGACY:relatedTime       AGACY:d48234b6-0991-4710-a060-5326fa1b14a6 ;
+                           AGACY:uncertaintyLevel  0.8962557975955502
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:5fbe97c4-281c-47b2-91bc-ffa32e540a4b ;
+                           AGACY:uncertaintyLevel  0.9932627186090777
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownBottle" ;
+                           AGACY:relatedTime       AGACY:0f4dd344-bae2-4ce8-b543-7bdb35d4c0ae ;
+                           AGACY:uncertaintyLevel  0.9185920226953026
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "CloseDoor" ;
+                           AGACY:relatedTime       AGACY:5b29a733-a904-4393-8cdf-b48b858bbce0 ;
+                           AGACY:uncertaintyLevel  0.984427850206505
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchBread" ;
+                           AGACY:relatedTime       AGACY:3419c0b3-a970-4c77-a83c-1d916aa8e5db ;
+                           AGACY:uncertaintyLevel  0.9539311935433641
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "PutdownKnifeCheese" ;
+                           AGACY:relatedTime       AGACY:5e2bb559-14d9-41ca-b2a0-245ef9518475 ;
+                           AGACY:uncertaintyLevel  0.9551803411888854
+                         ] ;
+        AGACY:hasEvent   [ a                       AGACY:Event ;
+                           AGACY:hasValue          "FetchCheese" ;
+                           AGACY:relatedTime       AGACY:19a32ecb-d243-42e2-aa6d-402ce3630f51 ;
+                           AGACY:uncertaintyLevel  0.8455757004556703
+                         ] ;
+        AGACY:hasName    "Hela" .
+
+_:b58   a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownCup" ;
+        AGACY:partOf            _:b57 ;
+        AGACY:relatedTime       AGACY:206a63f1-724c-404d-bbe7-98a6b9f6ad75 ;
+        AGACY:uncertaintyLevel  0.9152327801556666 .
+
+_:b46   a                       AGACY:Action ;
+        AGACY:composedOf        _:b87 , _:b45 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:27f1b623-5e62-4c36-8b29-53633b80ba68 ;
+        AGACY:uncertaintyLevel  0.8416207395643105 .
+
+_:b74   a                       AGACY:Action ;
+        AGACY:composedOf        _:b73 , _:b107 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:3ea9358d-6640-4fcb-a039-82c094a5926d ;
+        AGACY:uncertaintyLevel  0.8419231041989732 .
+
+_:b76   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b20 ;
+        AGACY:relatedTime       AGACY:813b7e88-093a-4cac-ac93-d1228fa08796 ;
+        AGACY:uncertaintyLevel  0.8030451512324985 .
+
+_:b102  a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownBottle" ;
+        AGACY:partOf            _:b12 ;
+        AGACY:relatedTime       AGACY:46b84e65-1c0d-4109-a981-53a4ef1742c1 ;
+        AGACY:uncertaintyLevel  0.9327758940553726 .
+
+_:b14   a                       AGACY:Action ;
+        AGACY:composedOf        _:b13 , _:b89 ;
+        AGACY:hasValue          "DrinkfromGlass" ;
+        AGACY:relatedTime       AGACY:2dece49d-75c0-4070-bb44-d62d32507fdf ;
+        AGACY:uncertaintyLevel  0.9633883544904998 .
+
+_:b53   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchBread" ;
+        AGACY:partOf            _:b52 ;
+        AGACY:relatedTime       AGACY:beaa75db-da68-45d1-ba8f-a83b8da4d457 ;
+        AGACY:uncertaintyLevel  0.9251530287786041 .
+
+_:b97   a                       AGACY:Action ;
+        AGACY:composedOf        _:b108 , _:b96 ;
+        AGACY:hasValue          "PutawayBread" ;
+        AGACY:relatedTime       AGACY:98600f5f-9be7-4839-8dc2-9f050942ebe2 ;
+        AGACY:uncertaintyLevel  0.902324201091919 .
+
+_:b80   a                       AGACY:Action ;
+        AGACY:composedOf        _:b105 , _:b71 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:a73e1780-1e9b-408e-8b1f-32839329c49e ;
+        AGACY:uncertaintyLevel  0.8753710195782269 .
+
+_:b94   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b92 ;
+        AGACY:relatedTime       AGACY:65061498-a05f-4318-a48a-045ce8576fef ;
+        AGACY:uncertaintyLevel  0.91784248445985 .
+
+_:b108  a                       AGACY:Event ;
+        AGACY:hasValue          "PutdownBread" ;
+        AGACY:partOf            _:b97 ;
+        AGACY:relatedTime       AGACY:10091da5-813f-4028-bbfe-50a1466906dc ;
+        AGACY:uncertaintyLevel  0.8261184106364022 .
+
+_:b40   a                       AGACY:Action ;
+        AGACY:composedOf        _:b39 , _:b104 , _:b95 ;
+        AGACY:hasValue          "GetKnifeSalami" ;
+        AGACY:relatedTime       AGACY:42a62c2a-2d1c-4f74-a94e-0137b9f22d49 ;
+        AGACY:uncertaintyLevel  0.8778167221424091 .
+
+_:b79   a                       AGACY:Event ;
+        AGACY:hasValue          "FetchGlass" ;
+        AGACY:partOf            _:b44 ;
+        AGACY:relatedTime       AGACY:220293e2-b7d1-4b54-908c-218e6733d25f ;
+        AGACY:uncertaintyLevel  0.9677772780821032 .
+
+_:b103  a                       AGACY:Action ;
+        AGACY:composedOf        _:b105 , _:b84 ;
+        AGACY:hasValue          "DrinkfromCup" ;
+        AGACY:relatedTime       AGACY:d1cdaed2-5598-456b-b3c8-1050b8e94390 ;
+        AGACY:uncertaintyLevel  0.8782047453268244 .
+
+_:b106  a                       AGACY:Event ;
+        AGACY:hasValue          "OpenFridge" ;
+        AGACY:partOf            _:b51 ;
+        AGACY:relatedTime       AGACY:d72ab596-1af9-4581-8d0e-cb3238b6251b ;
+        AGACY:uncertaintyLevel  0.8301001514742224 .
+
+_:b107  a                       AGACY:Event ;
+        AGACY:hasValue          "FetchCup" ;
+        AGACY:partOf            _:b74 ;
+        AGACY:relatedTime       AGACY:3ea9358d-6640-4fcb-a039-82c094a5926d ;
+        AGACY:uncertaintyLevel  0.8419231041989732 .
+
+AGACY:3c388338-3cb6-4fa4-a044-22258c1d181b
+        a               AGACY:Time ;
+        AGACY:hasValue  337.73 .
+
+AGACY:3419c0b3-a970-4c77-a83c-1d916aa8e5db
+        a               AGACY:Time ;
+        AGACY:hasValue  760.259 .
+
+AGACY:6eceea0f-7a1c-4853-85c5-0885bf44bc95
+        a               AGACY:Time ;
+        AGACY:hasValue  102.732 .
+
+AGACY:59e1ba07-4ad1-4a79-bcf5-685b993c33a6
+        a               AGACY:Time ;
+        AGACY:hasValue  1002.523 .
+
+AGACY:Sensor  a  owl:Class .
+
+AGACY:Object  a  owl:Class .
+
+AGACY:e76ce13a-91c4-4cc1-b7ec-2234e2061f77
+        a               AGACY:Time ;
+        AGACY:hasValue  595.927 .
+
+AGACY:7d9d201c-00c6-4cfa-b6dd-96a7cec8b62b
+        a               AGACY:Time ;
+        AGACY:hasValue  938.124 .
+
+AGACY:798a457e-03c2-4de0-941f-532f3eab8f21
+        a               AGACY:Time ;
+        AGACY:hasValue  537.128 .
+
+AGACY:054c98ae-948e-44f4-a753-6c184fc9e75d
+        a               AGACY:Time ;
+        AGACY:hasValue  929.024 .
+
+AGACY:Uncertainty  a  owl:Class .
+
+AGACY:70db022b-174b-4e12-b551-1b0539fe5778
+        a               AGACY:Time ;
+        AGACY:hasValue  144.932 .
+
+AGACY:b7d8b551-e700-48d7-a83f-e9ee0debd902
+        a               AGACY:Time ;
+        AGACY:hasValue  136.032 .
+
+AGACY:e0f50d2f-db47-49bb-9e52-9c42cabf8ce6
+        a               AGACY:Time ;
+        AGACY:hasValue  458.729 .
+
+AGACY:hasValue  a    owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Time , AGACY:Object .
+
+AGACY:hasObject  a   owl:ObjectProperty ;
+        rdfs:domain  AGACY:Subject ;
+        rdfs:range   AGACY:Uncertainty .
+
+AGACY:06b1d212-c8fc-4f32-bd38-0342c879ecd0
+        a               AGACY:Time ;
+        AGACY:hasValue  817.225 .
+
+AGACY:bcba108b-332b-49b4-ad21-f548c615734c
+        a               AGACY:Time ;
+        AGACY:hasValue  712.726 .
+
+AGACY:839dfcb3-12a8-4477-9388-40486ed15eaf
+        a               AGACY:Time ;
+        AGACY:hasValue  774.226 .
+
+AGACY:352f700c-4221-40ce-b174-615d9d411ef3
+        a               AGACY:Time ;
+        AGACY:hasValue  745.026 .
+
+AGACY:27581547-f6c9-4cd9-99b8-0a3621ac6ffb
+        a               AGACY:Time ;
+        AGACY:hasValue  445.329 .
+
+AGACY:808e9a9d-3715-4e8c-96d8-9a4598b003f9
+        a               AGACY:Time ;
+        AGACY:hasValue  874.225 .
+
+_:b109  a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b110 ) .
+
+AGACY:9d058e01-8448-4c6f-85cb-c2fca182692c
+        a               AGACY:Time ;
+        AGACY:hasValue  652.727 .
+
+AGACY:Person  a          owl:Class ;
+        rdfs:subClassOf  AGACY:Subject .
+
+<http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl>
+        a       owl:Ontology .
+
+AGACY:2a2ef9b8-519e-4ac1-93fe-f15f016a8b56
+        a               AGACY:Time ;
+        AGACY:hasValue  725.926 .
+
+AGACY:cd178ca4-b556-427b-a5ee-539f483ee9ff
+        a               AGACY:Time ;
+        AGACY:hasValue  416.129 .
+
+AGACY:e7755aab-ac40-4b8e-8714-2ddebe013f83
+        a               AGACY:Time ;
+        AGACY:hasValue  770.126 .
+
+AGACY:6af6bb44-f8b0-49d4-b7e6-99614adb26e1
+        a               AGACY:Time ;
+        AGACY:hasValue  621.994 .
+
+AGACY:24ff6e05-d8ca-4764-888d-3bdcdb665548
+        a               AGACY:Time ;
+        AGACY:hasValue  449.429 .
+
+AGACY:34452110-21bb-4cbc-84e6-b7cf17bb6cb7
+        a               AGACY:Time ;
+        AGACY:hasValue  741.526 .
+
+AGACY:d049b672-ce1f-4e16-b589-66f8a0d671d0
+        a               AGACY:Time ;
+        AGACY:hasValue  900.224 .
+
+AGACY:0516ed0f-1027-43c3-b550-ab9078ff7e03
+        a               AGACY:Time ;
+        AGACY:hasValue  920.324 .
+
+AGACY:Time  a   owl:Class .
+
+AGACY:8d7c10c2-2aa0-4566-9bf3-88db371fb96c
+        a               AGACY:Time ;
+        AGACY:hasValue  753.426 .
+
+AGACY:b33c4b2e-d384-493b-a562-077670e40770
+        a               AGACY:Time ;
+        AGACY:hasValue  908.624 .
+
+AGACY:1a3e3c8c-f9a8-401d-90db-778a97149b78
+        a               AGACY:Time ;
+        AGACY:hasValue  563.228 .
+
+AGACY:66c46cc1-e7be-48f2-a3dd-3c21c9b4d500
+        a               AGACY:Time ;
+        AGACY:hasValue  413.729 .
+
+AGACY:f633e4dd-3c7d-4797-8fb0-b0fcf0edd4df
+        a               AGACY:Time ;
+        AGACY:hasValue  600.161 .
+
+AGACY:46798243-4644-4562-9b62-7e08e552d600
+        a               AGACY:Time ;
+        AGACY:hasValue  442.196 .
+
+AGACY:b24d8c2c-1266-49d3-a28e-534b0624ddb4
+        a               AGACY:Time ;
+        AGACY:hasValue  80.933 .
+
+AGACY:dcc2424f-b215-4d63-bd90-5b8373ed3595
+        a               AGACY:Time ;
+        AGACY:hasValue  800.625 .
+
+AGACY:8f26ea51-c264-4467-b267-2bcb39814c0d
+        a               AGACY:Time ;
+        AGACY:hasValue  550.794 .
+
+AGACY:98600f5f-9be7-4839-8dc2-9f050942ebe2
+        a               AGACY:Time ;
+        AGACY:hasValue  934.424 .
+
+AGACY:efdc9494-7ead-405b-9eb9-852f314a68e6
+        a               AGACY:Time ;
+        AGACY:hasValue  493.028 .
+
+AGACY:33b6abf8-4b71-404e-b13b-f0d1d9fd3fff
+        a               AGACY:Time ;
+        AGACY:hasValue  535.628 .
+
+AGACY:5b29a733-a904-4393-8cdf-b48b858bbce0
+        a               AGACY:Time ;
+        AGACY:hasValue  947.124 .
+
+AGACY:12efc7df-4357-48fa-a53c-70ebef7dabbf
+        a               AGACY:Time ;
+        AGACY:hasValue  509.795 .
+
+AGACY:ff4c65b8-a4fd-46cb-a8e9-4d9cbe267c9f
+        a               AGACY:Time ;
+        AGACY:hasValue  587.294 .
+
+AGACY:38a5a04e-8ea6-4b31-8641-6ee0d793a60e
+        a               AGACY:Time ;
+        AGACY:hasValue  555.494 .
+
+AGACY:8e85e4c6-b3b6-4f0e-8238-55947fdcbda2
+        a               AGACY:Time ;
+        AGACY:hasValue  824.325 .
+
+_:b111  a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b112 ) .
+
+AGACY:941a5933-6e5c-41ce-9aa9-a65dfdac343b
+        a               AGACY:Time ;
+        AGACY:hasValue  688.426 .
+
+AGACY:3dfd7883-ac0c-4070-9b0e-fd5d5c044c9b
+        a               AGACY:Time ;
+        AGACY:hasValue  570.594 .
+
+AGACY:6b87fa2e-92ee-4c0b-8bd0-c3350eb30c78
+        a               AGACY:Time ;
+        AGACY:hasValue  673.227 .
+
+AGACY:a356b945-855c-491b-9eac-81dab3f8b85a
+        a               AGACY:Time ;
+        AGACY:hasValue  854.325 .
+
+AGACY:c7cedf83-f240-46f6-8309-75ebb2d75546
+        a               AGACY:Time ;
+        AGACY:hasValue  539.328 .
+
+AGACY:11d6d2f5-3e2b-4dfc-8143-bac136ab0ddc
+        a               AGACY:Time ;
+        AGACY:hasValue  578.894 .
+
+AGACY:67721b54-ac81-409e-bad4-7ef7f2ccef5d
+        a               AGACY:Time ;
+        AGACY:hasValue  547.428 .
+
+AGACY:229469ff-f6c3-4011-ba2e-0a6d0371bb03
+        a               AGACY:Time ;
+        AGACY:hasValue  846.092 .
+
+AGACY:a4f3cce9-a4c6-4a44-85f8-d1b41ddbf5f0
+        a               AGACY:Time ;
+        AGACY:hasValue  566.228 .
+
+AGACY:sensor1  a       AGACY:Sensor , owl:NamedIndividual ;
+        AGACY:hasName  "Sensor1" .
+
+AGACY:hasEvent  a    owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Event .
+
+AGACY:90fe6223-05dd-4685-9183-3aa03cfffa72
+        a               AGACY:Time ;
+        AGACY:hasValue  416.896 .
+
+AGACY:hasName  a     owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Subject , AGACY:Sensor .
+
+AGACY:01ae0500-1086-449e-b927-d3a327b36d5d
+        a               AGACY:Time ;
+        AGACY:hasValue  838.325 .
+
+AGACY:dd266229-7cbd-440f-a883-7cfea0d65e8c
+        a               AGACY:Time ;
+        AGACY:hasValue  679.327 .
+
+AGACY:e960d7a1-069f-499e-b9da-cab033156ab8
+        a               AGACY:Time ;
+        AGACY:hasValue  96.932 .
+
+AGACY:7428ac76-1f68-431f-86ac-b0b3eb7ff59c
+        a               AGACY:Time ;
+        AGACY:hasValue  562.794 .
+
+AGACY:46b84e65-1c0d-4109-a981-53a4ef1742c1
+        a               AGACY:Time ;
+        AGACY:hasValue  867.858 .
+
+AGACY:813b7e88-093a-4cac-ac93-d1228fa08796
+        a               AGACY:Time ;
+        AGACY:hasValue  805.925 .
+
+AGACY:19a32ecb-d243-42e2-aa6d-402ce3630f51
+        a               AGACY:Time ;
+        AGACY:hasValue  685.425 .
+
+AGACY:ce096ff5-3f25-45c7-a4bc-1c7585b89d44
+        a               AGACY:Time ;
+        AGACY:hasValue  338.03 .
+
+_:b113  xsd:minInclusive  "0.0"^^xsd:double .
+
+AGACY:65061498-a05f-4318-a48a-045ce8576fef
+        a               AGACY:Time ;
+        AGACY:hasValue  411.129 .
+
+AGACY:47a864a8-0269-4b2a-9933-7a3ace1b318b
+        a               AGACY:Time ;
+        AGACY:hasValue  333.93 .
+
+AGACY:10091da5-813f-4028-bbfe-50a1466906dc
+        a               AGACY:Time ;
+        AGACY:hasValue  937.257 .
+
+_:b114  xsd:maxInclusive  "100.0"^^xsd:double .
+
+AGACY:f58fec4f-330c-4b88-9b5e-9737100f7fe3
+        a               AGACY:Time ;
+        AGACY:hasValue  132.199 .
+
+AGACY:683ff765-a91a-417d-b4c0-10f746d3b2dc
+        a               AGACY:Time ;
+        AGACY:hasValue  488.528 .
+
+AGACY:2d3764ca-cdac-4fd5-ae59-9254e0401d9b
+        a               AGACY:Time ;
+        AGACY:hasValue  888.291 .
+
+AGACY:f8820f01-fb2f-48d3-b8b0-8b0500455404
+        a               AGACY:Time ;
+        AGACY:hasValue  835.092 .
+
+AGACY:0645019b-0cd8-480d-ad9e-64602f0b1342
+        a               AGACY:Time ;
+        AGACY:hasValue  421.629 .
+
+AGACY:946801ae-8c4d-425f-8ddc-e56b561932da
+        a               AGACY:Time ;
+        AGACY:hasValue  515.662 .
+
+AGACY:64da0810-374c-44db-a347-fc47ce723b58
+        a               AGACY:Time ;
+        AGACY:hasValue  524.761 .
+
+AGACY:c636e491-3965-42e6-b006-732a3ecca206
+        a               AGACY:Time ;
+        AGACY:hasValue  113.832 .
+
+AGACY:62ade0a2-00e8-4b7f-b76a-e76fb1caffa4
+        a               AGACY:Time ;
+        AGACY:hasValue  668.027 .
+
+AGACY:0f4dd344-bae2-4ce8-b543-7bdb35d4c0ae
+        a               AGACY:Time ;
+        AGACY:hasValue  605.361 .
+
+AGACY:8ae03701-9b09-4388-84a5-18e30c08472b
+        a               AGACY:Time ;
+        AGACY:hasValue  123.532 .
+
+AGACY:146f0c45-e55b-462b-9235-7cc78c54ad39
+        a               AGACY:Time ;
+        AGACY:hasValue  573.894 .
+
+AGACY:d606d36a-77f0-49f4-9ab4-d33b7fc8af8c
+        a               AGACY:Time ;
+        AGACY:hasValue  813.825 .
+
+AGACY:248f31fc-1ae3-43d4-92ae-7d494248a4ba
+        a               AGACY:Time ;
+        AGACY:hasValue  315.73 .
+
+AGACY:734c7c36-0a13-45a4-ac42-ff97b91b7181
+        a               AGACY:Time ;
+        AGACY:hasValue  611.427 .
+
+AGACY:39b5cf37-d22d-45be-a6b6-820ca469e493
+        a               AGACY:Time ;
+        AGACY:hasValue  993.123 .
+
+AGACY:a344858f-2b4c-4a3a-8c01-49e58ce4c51e
+        a               AGACY:Time ;
+        AGACY:hasValue  127.399 .
+
+AGACY:585b7bdb-81a2-455a-976b-653fac9a29f8
+        a               AGACY:Time ;
+        AGACY:hasValue  850.758 .
+
+AGACY:63c7bbe1-3649-4a59-bd51-a41d71b99bff
+        a               AGACY:Time ;
+        AGACY:hasValue  696.226 .
+
+AGACY:beaa75db-da68-45d1-ba8f-a83b8da4d457
+        a               AGACY:Time ;
+        AGACY:hasValue  527.928 .
+
+AGACY:67bebe77-88b4-49b6-a5f9-bd760e2b96c9
+        a               AGACY:Time ;
+        AGACY:hasValue  480.329 .
+
+AGACY:accordingTo  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Sensor .
+
+AGACY:Locomotion  a      owl:Class ;
+        rdfs:subClassOf  AGACY:Object .
+
+AGACY:d1cdaed2-5598-456b-b3c8-1050b8e94390
+        a               AGACY:Time ;
+        AGACY:hasValue  338.63 .
+
+AGACY:c2435aa3-d5ff-487a-99c8-1c5cac2c1201
+        a               AGACY:Time ;
+        AGACY:hasValue  325.63 .
+
+AGACY:9fb11a1e-4b8a-40c6-b5ef-c9b34b6fa5df
+        a               AGACY:Time ;
+        AGACY:hasValue  320.23 .
+
+AGACY:6bec6a35-3679-46e6-9f7e-25a650454964
+        a               AGACY:Time ;
+        AGACY:hasValue  330.63 .
+
+AGACY:4fa9db86-34df-4be3-95b4-442612efbee7
+        a               AGACY:Time ;
+        AGACY:hasValue  821.325 .
+
+_:b115  a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b114 ) .
+
+AGACY:Subject  a  owl:Class .
+
+AGACY:6b36eeac-341a-4b79-bdc7-5c5d238376ac
+        a               AGACY:Time ;
+        AGACY:hasValue  640.06 .
+
+AGACY:c3487781-8fd3-40c4-a395-bc9c2fa2c1ae
+        a               AGACY:Time ;
+        AGACY:hasValue  878.525 .
+
+AGACY:84a9fd5b-a7c9-479f-a596-35c0781505cd
+        a               AGACY:Time ;
+        AGACY:hasValue  842.925 .
+
+AGACY:98433e27-e4af-4956-a594-0a3630e3c998
+        a               AGACY:Time ;
+        AGACY:hasValue  832.825 .
+
+AGACY:3768188c-6d75-4cb0-ae6a-c29c78909aee
+        a               AGACY:Time ;
+        AGACY:hasValue  589.261 .
+
+AGACY:92f986a0-e6ae-4a94-a816-ffd3c899a00b
+        a               AGACY:Time ;
+        AGACY:hasValue  491.928 .
+
+AGACY:aea5af89-47e3-4aec-b559-3b44f41e5a28
+        a               AGACY:Time ;
+        AGACY:hasValue  914.224 .
+
+AGACY:db3bdf25-253a-44d0-84bf-83b4c1c5cfad
+        a               AGACY:Time ;
+        AGACY:hasValue  828.325 .
+
+AGACY:307dcb59-4c9d-4b37-8aa0-7bca7861cde8
+        a               AGACY:Time ;
+        AGACY:hasValue  155.132 .
+
+AGACY:9c33e46f-8a13-4a81-8d6d-1d62b23857b0
+        a               AGACY:Time ;
+        AGACY:hasValue  340.13 .
+
+AGACY:056ec352-03f1-4760-b337-d5f1e8dca566
+        a               AGACY:Time ;
+        AGACY:hasValue  419.396 .
+
+AGACY:5e865c70-6f6e-4d2e-8664-b4ca6c04dd46
+        a               AGACY:Time ;
+        AGACY:hasValue  836.325 .
+
+AGACY:4efadd0b-d2dd-4b77-990f-f301d3273a64
+        a               AGACY:Time ;
+        AGACY:hasValue  792.825 .
+
+_:b110  xsd:maxInclusive  "100.0"^^xsd:double .
+
+AGACY:a0e878fb-0b96-449a-979b-2e645c2a4823
+        a               AGACY:Time ;
+        AGACY:hasValue  783.925 .
+
+AGACY:d6fdb4d6-a8ac-4394-8b42-3ffbc0aa1cc1
+        a               AGACY:Time ;
+        AGACY:hasValue  416.929 .
+
+AGACY:af924db9-37f9-4458-b9d1-8f00e4cee3d1
+        a               AGACY:Time ;
+        AGACY:hasValue  867.125 .
+
+AGACY:Action  a  owl:Class .
+
+AGACY:e9ab994d-b441-4a1c-b53d-883f45b63972
+        a               AGACY:Time ;
+        AGACY:hasValue  562.228 .
+
+AGACY:ad1513e7-d084-435b-bf2c-2f9c928abdc6
+        a               AGACY:Time ;
+        AGACY:hasValue  593.227 .
+
+AGACY:bf343c9c-e568-49a2-8c02-c023931f4b10
+        a               AGACY:Time ;
+        AGACY:hasValue  880.958 .
+
+AGACY:875fe36d-3807-4f0b-b86e-1ae48eea8e83
+        a               AGACY:Time ;
+        AGACY:hasValue  765.326 .
+
+AGACY:bab98072-e2f7-4c40-8bc1-78c33885d1dc
+        a               AGACY:Time ;
+        AGACY:hasValue  437.896 .
+
+AGACY:99fecd14-c470-48c2-9f19-cb2983a1e6fe
+        a               AGACY:Time ;
+        AGACY:hasValue  863.725 .
+
+AGACY:220293e2-b7d1-4b54-908c-218e6733d25f
+        a               AGACY:Time ;
+        AGACY:hasValue  737.893 .
+
+AGACY:ac5abeeb-d0ad-48dd-a223-dfb95fe55a5a
+        a               AGACY:Time ;
+        AGACY:hasValue  431.129 .
+
+AGACY:f8a739df-69e3-48a2-be65-3be3c2fa4924
+        a               AGACY:Time ;
+        AGACY:hasValue  675.593 .
+
+AGACY:47871524-0b22-4c73-8ae2-764824a5400f
+        a               AGACY:Time ;
+        AGACY:hasValue  665.227 .
+
+AGACY:804ea0ef-11b3-45e9-882d-80ddf73d631d
+        a               AGACY:Time ;
+        AGACY:hasValue  462.929 .
+
+AGACY:84f9d97a-b843-4799-a761-09458853b989
+        a               AGACY:Time ;
+        AGACY:hasValue  518.628 .
+
+AGACY:562ccbf1-f810-4a49-9df2-3f6c090b4ba0
+        a               AGACY:Time ;
+        AGACY:hasValue  684.926 .
+
+AGACY:24e14942-7b7d-4c41-a388-2752e3e1f1b8
+        a               AGACY:Time ;
+        AGACY:hasValue  688.126 .
+
+AGACY:afff40d3-1326-4cea-80aa-11279434326e
+        a               AGACY:Time ;
+        AGACY:hasValue  484.195 .
+
+_:b112  xsd:minInclusive  "0.0"^^xsd:double .
+
+AGACY:d72ab596-1af9-4581-8d0e-cb3238b6251b
+        a               AGACY:Time ;
+        AGACY:hasValue  504.128 .
+
+AGACY:b84338f7-0e53-43da-af61-868717844e2d
+        a               AGACY:Time ;
+        AGACY:hasValue  708.226 .
+
+AGACY:42a62c2a-2d1c-4f74-a94e-0137b9f22d49
+        a               AGACY:Time ;
+        AGACY:hasValue  533.328 .
+
+AGACY:665d6873-a744-40fc-a1e5-749a9e924751
+        a               AGACY:Time ;
+        AGACY:hasValue  678.927 .
+
+AGACY:Location  a        owl:Class ;
+        rdfs:subClassOf  AGACY:Object .
+
+AGACY:3d7dd66b-82ea-4313-9702-34fa8a844cb7
+        a               AGACY:Time ;
+        AGACY:hasValue  497.695 .
+
+AGACY:27f1b623-5e62-4c36-8b29-53633b80ba68
+        a               AGACY:Time ;
+        AGACY:hasValue  471.629 .
+
+AGACY:c217f3d6-04b6-422e-9a92-1a11367b0d46
+        a               AGACY:Time ;
+        AGACY:hasValue  476.029 .
+
+AGACY:uncertaintyLevel
+        a            owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Uncertainty , AGACY:Event , AGACY:Activity , AGACY:Action ;
+        rdfs:range   [ a                   rdfs:Datatype ;
+                       owl:intersectionOf  ( _:b116 _:b109 )
+                     ] .
+
+AGACY:5fbe97c4-281c-47b2-91bc-ffa32e540a4b
+        a               AGACY:Time ;
+        AGACY:hasValue  87.132 .
+
+AGACY:fc099765-70cc-45d9-a1d1-d1dfb80ed13e
+        a               AGACY:Time ;
+        AGACY:hasValue  505.162 .
+
+AGACY:46bea613-288e-40a7-a420-ef3a4cdf0781
+        a               AGACY:Time ;
+        AGACY:hasValue  809.859 .
+
+AGACY:688ab729-0a8d-4b24-a79c-381191d79b16
+        a               AGACY:Time ;
+        AGACY:hasValue  985.59 .
+
+AGACY:3ea9358d-6640-4fcb-a039-82c094a5926d
+        a               AGACY:Time ;
+        AGACY:hasValue  454.929 .
+
+AGACY:Activity  a  owl:Class .
+
+AGACY:86bea229-d2ae-4510-a0b5-174b196559af
+        a               AGACY:Time ;
+        AGACY:hasValue  431.096 .
+
+AGACY:relatedObject  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Object .
+
+AGACY:cf7b758b-4e35-4083-9561-c6b7cfeb9ecf
+        a               AGACY:Time ;
+        AGACY:hasValue  891.824 .
+
+AGACY:206a63f1-724c-404d-bbe7-98a6b9f6ad75
+        a               AGACY:Time ;
+        AGACY:hasValue  467.995 .
+
+AGACY:284b3bb7-47f4-4c9c-a673-18e53b6c8c3b
+        a               AGACY:Time ;
+        AGACY:hasValue  756.626 .
+
+AGACY:fbfaa325-5c49-4186-94c3-763fb424d7ca
+        a               AGACY:Time ;
+        AGACY:hasValue  576.428 .
+
+AGACY:46cf628a-ff5b-4c42-92fd-88c9ac7225a0
+        a               AGACY:Time ;
+        AGACY:hasValue  552.694 .
+
+AGACY:efdbdde5-084a-4ca0-9644-4714f60cf659
+        a               AGACY:Time ;
+        AGACY:hasValue  855.825 .
+
+AGACY:5e2bb559-14d9-41ca-b2a0-245ef9518475
+        a               AGACY:Time ;
+        AGACY:hasValue  683.493 .
+
+AGACY:b1e9f065-366c-4d54-b537-bea12975b3dd
+        a               AGACY:Time ;
+        AGACY:hasValue  501.128 .
+
+AGACY:5516bde8-a8a2-4f6c-a382-d2f4384c2578
+        a               AGACY:Time ;
+        AGACY:hasValue  584.894 .
+
+AGACY:f0c7681b-1bbc-420f-a171-a1d2401f543f
+        a               AGACY:Time ;
+        AGACY:hasValue  530.828 .
+
+AGACY:Event  a  owl:Class .
+
+AGACY:66ad4541-50e8-48bf-82b7-6ef414c27a59
+        a               AGACY:Time ;
+        AGACY:hasValue  797.825 .
+
+AGACY:70906156-76d8-4abb-8039-1c87f88566ef
+        a               AGACY:Time ;
+        AGACY:hasValue  749.326 .
+
+AGACY:3b8361f9-e70e-4f7b-be26-7492233e77c1
+        a               AGACY:Time ;
+        AGACY:hasValue  866.558 .
+
+AGACY:5a8aab6f-4ae1-4e68-94ba-cf91e8bf4cab
+        a               AGACY:Time ;
+        AGACY:hasValue  954.724 .
+
+AGACY:5da43860-c046-40f2-b879-f218af73f518
+        a               AGACY:Time ;
+        AGACY:hasValue  831.925 .
+
+AGACY:508d20de-ee3b-4004-8535-aeace0a4daf5
+        a               AGACY:Time ;
+        AGACY:hasValue  717.526 .
+
+AGACY:partOf  a        owl:ObjectProperty ;
+        rdfs:domain    AGACY:Event ;
+        rdfs:range     AGACY:Action ;
+        owl:inverseOf  AGACY:composedOf .
+
+AGACY:c7c37013-5644-449e-9c42-a9e3c1e206a4
+        a               AGACY:Time ;
+        AGACY:hasValue  730.793 .
+
+AGACY:hasAction  a   owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Action .
+
+AGACY:d48234b6-0991-4710-a060-5326fa1b14a6
+        a               AGACY:Time ;
+        AGACY:hasValue  831.525 .
+
+AGACY:22c68385-910f-47dc-9b25-4631e5b569a9
+        a               AGACY:Time ;
+        AGACY:hasValue  945.024 .
+
+AGACY:hasActivity  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Activity .
+
+AGACY:relatedTime  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Time .
+
+AGACY:UncertaintyLevel
+        a            owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Uncertainty , AGACY:Event , AGACY:Activity , AGACY:Action ;
+        rdfs:range   [ a                   rdfs:Datatype ;
+                       owl:intersectionOf  ( _:b111 _:b115 )
+                     ] .
+
+AGACY:ce247f5a-46b5-406f-a9f6-6326b6ca4380
+        a               AGACY:Time ;
+        AGACY:hasValue  723.426 .
+
+AGACY:composedOf  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Action ;
+        rdfs:range   AGACY:Event .
+
+AGACY:13d83ec8-c907-4d56-a741-38f360715b05
+        a               AGACY:Time ;
+        AGACY:hasValue  846.092 .
+
+AGACY:819f08b0-5041-4653-8872-0f2f729a9174
+        a               AGACY:Time ;
+        AGACY:hasValue  99.832 .
+
+AGACY:2369c54e-3359-4d3e-8e80-cbe7eafaca1f
+        a               AGACY:Time ;
+        AGACY:hasValue  789.592 .
+
+AGACY:f3e204cf-7bca-4e61-86aa-8fbb909b0362
+        a               AGACY:Time ;
+        AGACY:hasValue  342.93 .
+
+AGACY:ce55d6eb-84ab-4c44-9dd1-458af5ef2e21
+        a               AGACY:Time ;
+        AGACY:hasValue  859.925 .
+
+_:b116  a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b113 ) .
+
+AGACY:af3dd666-c411-4cd8-b20b-3bc8d9f364fc
+        a               AGACY:Time ;
+        AGACY:hasValue  328.23 .
+
+AGACY:489f75c0-19ab-434c-a8a9-e7b5793c4289
+        a               AGACY:Time ;
+        AGACY:hasValue  106.632 .
+
+AGACY:f938583e-2855-4b18-a315-8c49720c87a2
+        a               AGACY:Time ;
+        AGACY:hasValue  898.224 .
+
+AGACY:a73e1780-1e9b-408e-8b1f-32839329c49e
+        a               AGACY:Time ;
+        AGACY:hasValue  340.73 .
+
+AGACY:93345c3b-fc9a-4abb-9cb1-b973ca8544dc
+        a               AGACY:Time ;
+        AGACY:hasValue  325.963 .
+
+AGACY:934234e1-b0fc-4a35-a1fc-9bfb2ac15e34
+        a               AGACY:Time ;
+        AGACY:hasValue  600.161 .
+
+AGACY:90f332eb-62f8-4c94-8068-452fabb7e087
+        a               AGACY:Time ;
+        AGACY:hasValue  776.126 .
+
+AGACY:2dece49d-75c0-4070-bb44-d62d32507fdf
+        a               AGACY:Time ;
+        AGACY:hasValue  664.627 .
+
+AGACY:2f441212-1b8c-412d-9691-2ddf10d2edbf
+        a               AGACY:Time ;
+        AGACY:hasValue  597.527 .
+
+AGACY:c1d09574-bbe8-4666-bdd8-80c5d35c939f
+        a               AGACY:Time ;
+        AGACY:hasValue  968.324 .

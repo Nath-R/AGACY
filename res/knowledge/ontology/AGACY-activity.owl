@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY AGACY "http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ramol_na/ontologies/2016/9/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/ramol_na/ontologies/2016/9/untitled-ontology-33"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AGACY="http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#accordingTo -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;accordingTo">
+        <rdfs:range rdf:resource="&AGACY;Sensor"/>
+        <rdfs:domain rdf:resource="&AGACY;Uncertainty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#composedOf -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;composedOf">
+        <rdfs:domain rdf:resource="&AGACY;Action"/>
+        <rdfs:range rdf:resource="&AGACY;Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasAction -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;hasAction">
+        <rdfs:range rdf:resource="&AGACY;Action"/>
+        <rdfs:domain rdf:resource="&AGACY;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;hasActivity">
+        <rdfs:range rdf:resource="&AGACY;Activity"/>
+        <rdfs:domain rdf:resource="&AGACY;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;hasEvent">
+        <rdfs:range rdf:resource="&AGACY;Event"/>
+        <rdfs:domain rdf:resource="&AGACY;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasObject -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;hasObject">
+        <rdfs:domain rdf:resource="&AGACY;Subject"/>
+        <rdfs:range rdf:resource="&AGACY;Uncertainty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#partOf -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;partOf">
+        <rdfs:range rdf:resource="&AGACY;Action"/>
+        <rdfs:domain rdf:resource="&AGACY;Event"/>
+        <owl:inverseOf rdf:resource="&AGACY;composedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#relatedObject -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;relatedObject">
+        <rdfs:range rdf:resource="&AGACY;Object"/>
+        <rdfs:domain rdf:resource="&AGACY;Uncertainty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#relatedTime -->
+
+    <owl:ObjectProperty rdf:about="&AGACY;relatedTime">
+        <rdfs:range rdf:resource="&AGACY;Time"/>
+        <rdfs:domain rdf:resource="&AGACY;Uncertainty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#UncertaintyLevel -->
+
+    <owl:DatatypeProperty rdf:about="&AGACY;UncertaintyLevel">
+        <rdfs:domain rdf:resource="&AGACY;Action"/>
+        <rdfs:domain rdf:resource="&AGACY;Activity"/>
+        <rdfs:domain rdf:resource="&AGACY;Event"/>
+        <rdfs:domain rdf:resource="&AGACY;Uncertainty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">100.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="&AGACY;hasName">
+        <rdfs:domain rdf:resource="&AGACY;Sensor"/>
+        <rdfs:domain rdf:resource="&AGACY;Subject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="&AGACY;hasValue">
+        <rdfs:domain rdf:resource="&AGACY;Object"/>
+        <rdfs:domain rdf:resource="&AGACY;Time"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#uncertaintyLevel -->
+
+    <owl:DatatypeProperty rdf:about="&AGACY;uncertaintyLevel">
+        <rdfs:domain rdf:resource="&AGACY;Action"/>
+        <rdfs:domain rdf:resource="&AGACY;Activity"/>
+        <rdfs:domain rdf:resource="&AGACY;Event"/>
+        <rdfs:domain rdf:resource="&AGACY;Uncertainty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">100.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Action -->
+
+    <owl:Class rdf:about="&AGACY;Action"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Activity -->
+
+    <owl:Class rdf:about="&AGACY;Activity"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Event -->
+
+    <owl:Class rdf:about="&AGACY;Event"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Location -->
+
+    <owl:Class rdf:about="&AGACY;Location">
+        <rdfs:subClassOf rdf:resource="&AGACY;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Locomotion -->
+
+    <owl:Class rdf:about="&AGACY;Locomotion">
+        <rdfs:subClassOf rdf:resource="&AGACY;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Object -->
+
+    <owl:Class rdf:about="&AGACY;Object"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Person -->
+
+    <owl:Class rdf:about="&AGACY;Person">
+        <rdfs:subClassOf rdf:resource="&AGACY;Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Sensor -->
+
+    <owl:Class rdf:about="&AGACY;Sensor"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Subject -->
+
+    <owl:Class rdf:about="&AGACY;Subject"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Time -->
+
+    <owl:Class rdf:about="&AGACY;Time"/>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#Uncertainty -->
+
+    <owl:Class rdf:about="&AGACY;Uncertainty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#hela -->
+
+    <owl:NamedIndividual rdf:about="&AGACY;hela">
+        <rdf:type rdf:resource="&AGACY;Person"/>
+        <AGACY:hasName rdf:datatype="&xsd;string">Hela</AGACY:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#sensor1 -->
+
+    <owl:NamedIndividual rdf:about="&AGACY;sensor1">
+        <rdf:type rdf:resource="&AGACY;Sensor"/>
+        <AGACY:hasName rdf:datatype="&xsd;string">Sensor1</AGACY:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

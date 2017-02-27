@@ -1,0 +1,9 @@
+PrepareCoffee short 600: GetMilk PutSugar
+Drink short 600: DrinkfromCup DrinkfromGlass
+GatherCutlery short 600: GetKnifeSalami GetPlate GetBottle
+GatherFood short 600: GetBread GetSalami GetCheese
+Eat short 1200: EatBread DrinkfromGlass
+PutAwayFood short 600: PutawaySalami PutawayCheese PutawayBread
+PutAwayCutl short 600: PutawayBottle PutawayPlate PutawayKnifeSalami
+Dishwhasher short 300: PutinDishwasher
+Resting short 6000: LieonLazychair

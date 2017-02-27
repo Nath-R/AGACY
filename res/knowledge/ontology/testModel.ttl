@@ -1,0 +1,98 @@
+@prefix :      <http://www.semanticweb.org/ramol_na/ontologies/2016/9/untitled-ontology-33#> .
+@prefix AGACY: <http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:b0    xsd:maxInclusive  "100.0"^^xsd:double .
+
+AGACY:hela  a            AGACY:Person , owl:NamedIndividual ;
+        AGACY:hasName    "Hela" ;
+        AGACY:hasObject  [ AGACY:relatedTime  "10" ] .
+
+AGACY:hasAction  a   owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Action .
+
+AGACY:Location  a        owl:Class ;
+        rdfs:subClassOf  AGACY:Object .
+
+AGACY:UncertaintyLevel
+        a            owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Uncertainty , AGACY:Event , AGACY:Activity , AGACY:Action ;
+        rdfs:range   [ a                   rdfs:Datatype ;
+                       owl:intersectionOf  ( _:b1 _:b2 )
+                     ] .
+
+AGACY:composedOf  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Action ;
+        rdfs:range   AGACY:Event .
+
+AGACY:hasEvent  a    owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Event .
+
+AGACY:relatedObject  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Object .
+
+AGACY:Action  a  owl:Class .
+
+<http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl>
+        a       owl:Ontology .
+
+AGACY:Time  a   owl:Class .
+
+_:b3    xsd:minInclusive  "0.0"^^xsd:double .
+
+AGACY:hasActivity  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   AGACY:Activity .
+
+AGACY:Sensor  a  owl:Class .
+
+AGACY:partOf  a        owl:ObjectProperty ;
+        rdfs:domain    AGACY:Event ;
+        rdfs:range     AGACY:Action ;
+        owl:inverseOf  AGACY:composedOf .
+
+AGACY:Object  a  owl:Class .
+
+AGACY:Locomotion  a      owl:Class ;
+        rdfs:subClassOf  AGACY:Object .
+
+AGACY:Uncertainty  a  owl:Class .
+
+_:b1    a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b3 ) .
+
+_:b2    a                     rdfs:Datatype ;
+        owl:onDatatype        xsd:double ;
+        owl:withRestrictions  ( _:b0 ) .
+
+AGACY:Event  a  owl:Class .
+
+AGACY:hasObject  a   owl:ObjectProperty ;
+        rdfs:domain  AGACY:Subject ;
+        rdfs:range   AGACY:Uncertainty .
+
+AGACY:accordingTo  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Sensor .
+
+AGACY:Activity  a  owl:Class .
+
+AGACY:relatedTime  a  owl:ObjectProperty ;
+        rdfs:domain  AGACY:Uncertainty ;
+        rdfs:range   AGACY:Time .
+
+AGACY:hasName  a     owl:DatatypeProperty ;
+        rdfs:domain  AGACY:Person ;
+        rdfs:range   xsd:string .
+
+AGACY:Subject  a  owl:Class .
+
+AGACY:Person  a          owl:Class ;
+        rdfs:subClassOf  AGACY:Subject .

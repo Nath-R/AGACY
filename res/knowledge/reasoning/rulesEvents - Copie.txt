@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix AGACY: <http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#>
+
+[ruleWorking: 
+	(?user AGACY:hasObject ?uncert1),
+	(?uncert1 rdf:type AGACY:Uncertainty),
+	(?uncert1 AGACY:accordingTo ?sens1),
+	(?uncert1 AGACY:relatedObject ?obj1),
+	(?uncert1 AGACY:relatedTime  ?time1),
+	(?uncert1 AGACY:uncertaintyLevel ?ulvl1),
+	(?user AGACY:hasObject ?uncert2),
+	(?uncert2 rdf:type AGACY:Uncertainty),
+	(?uncert2 AGACY:accordingTo ?sens2),
+	(?uncert2 AGACY:relatedObject ?obj2),
+	(?uncert2 AGACY:relatedTime  ?time2),
+	(?uncert2 AGACY:uncertaintyLevel ?ulvl2),	
+	(?obj1 rdf:type AGACY:Location),
+	(?obj1 AGACY:hasValue "Hell"),
+	(?obj2 rdf:type AGACY:Locomotion),	
+	(?obj2 AGACY:hasValue "Crucified")
+	-> 
+	(?user AGACY:hasName "Nathan") ]

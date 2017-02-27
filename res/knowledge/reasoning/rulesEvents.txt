@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix AGACY: <http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#>
+
+[ruleSitKitchen: 
+	(?user AGACY:hasObject ?uncert1),
+	(?uncert1 rdf:type AGACY:Uncertainty),
+	(?uncert1 AGACY:accordingTo ?sens1),
+	(?uncert1 AGACY:relatedObject ?obj1),
+	(?uncert1 AGACY:relatedTime  ?time1),
+	(?uncert1 AGACY:uncertaintyLevel ?ulvl1),
+	(?user AGACY:hasObject ?uncert2),
+	(?uncert2 rdf:type AGACY:Uncertainty),
+	(?uncert2 AGACY:accordingTo ?sens2),
+	(?uncert2 AGACY:relatedObject ?obj2),
+	(?uncert2 AGACY:relatedTime  ?time2),
+	(?uncert2 AGACY:uncertaintyLevel ?ulvl2),	
+	(?obj1 rdf:type AGACY:Location),
+	(?obj1 AGACY:hasValue "Kitchen"),
+	(?obj2 rdf:type AGACY:Locomotion),
+	makeTemp(?event),	
+	(?obj2 AGACY:hasValue "Sitted")
+	-> 
+	
+	(?user AGACY:hasEvent ?event), 
+	(?event rdf:type AGACY:Event),
+	(?event AGACY:hasValue "SitInKitchen"),
+	(?event AGACY:relatedTime ?time1),
+	(?event AGACY:uncertaintyLevel ?ulvl1 )
+	]
+
+[ruleUseCutlery: 
+	(?user AGACY:hasObject ?uncert1),
+	(?uncert1 rdf:type AGACY:Uncertainty),
+	(?uncert1 AGACY:accordingTo ?sens1),
+	(?uncert1 AGACY:relatedObject ?obj1),
+	(?uncert1 AGACY:relatedTime  ?time1),
+	(?uncert1 AGACY:uncertaintyLevel ?ulvl1),
+	(?user AGACY:hasObject ?uncert2),
+	(?uncert2 rdf:type AGACY:Uncertainty),
+	(?uncert2 AGACY:accordingTo ?sens2),
+	(?uncert2 AGACY:relatedObject ?obj2),
+	(?uncert2 AGACY:relatedTime  ?time2),
+	(?uncert2 AGACY:uncertaintyLevel ?ulvl2),	
+	(?obj1 rdf:type AGACY:Object),
+	(?obj1 AGACY:hasValue "Plate"),
+	(?obj2 rdf:type AGACY:Object),
+	makeTemp(?event),	
+	(?obj2 AGACY:hasValue "Fork")
+	-> 
+	
+	(?user AGACY:hasEvent ?event), 
+	(?event rdf:type AGACY:Event),
+	(?event AGACY:hasValue "MealReady"),
+	(?event AGACY:relatedTime ?time1),
+	(?event AGACY:uncertaintyLevel ?ulvl1 )
+	]
+	
+[ruleUseToaster:
+	(?user AGACY:hasObject ?uncert1),
+	(?uncert1 rdf:type AGACY:Uncertainty),
+	(?uncert1 AGACY:accordingTo ?sens1),
+	(?uncert1 AGACY:relatedObject ?obj1),
+	(?uncert1 AGACY:relatedTime  ?time1),
+	(?uncert1 AGACY:uncertaintyLevel ?ulvl1),
+	(?obj1 rdf:type AGACY:Object),
+	(?obj1 AGACY:hasValue "Toaster"),
+	makeTemp(?event)
+	-> 	
+	(?user AGACY:hasEvent ?event), 
+	(?event rdf:type AGACY:Event),
+	(?event AGACY:hasValue "toasterUsed"),
+	(?event AGACY:relatedTime ?time1),
+	(?event AGACY:uncertaintyLevel ?ulvl1 )
+]

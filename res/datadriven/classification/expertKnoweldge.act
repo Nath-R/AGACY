@@ -1,0 +1,37 @@
+Relaxing: Resting
+Relaxing: Resting
+Relaxing: Resting
+CoffeeTime: PrepareCoffee Drink
+CoffeeTime: PrepareCoffee Drink
+CoffeeTime: PrepareCoffee Drink
+CoffeeTime: PrepareCoffee
+CoffeeTime: PrepareCoffee
+CoffeeTime: PrepareCoffee
+CoffeeTime: PrepareCoffee
+CoffeeTime: Drink
+CoffeeTime: PrepareCoffee
+SandwichTime: GatherCutlery GatherFood Eat Drink
+SandwichTime: GatherFood Eat Drink
+SandwichTime: GatherCutlery Eat Drink
+SandwichTime: Eat
+SandwichTime: Eat
+SandwichTime: Eat Drink
+SandwichTime: Eat Drink
+SandwichTime: GatherCutlery GatherFood
+SandwichTime: GatherCutlery GatherFood
+SandwichTime: GatherCutlery GatherFood Eat
+SandwichTime: GatherCutlery GatherFood Eat Drink
+Cleanup: PutAwayFood PutAwayCutl Dishwhasher
+Cleanup: PutAwayCutl Dishwhasher
+Cleanup: PutAwayCutl Dishwhasher
+Cleanup: PutAwayCutl Dishwhasher
+Cleanup: PutAwayCutl Dishwhasher
+Cleanup: PutAwayFood PutAwayCutl
+Cleanup: PutAwayFood PutAwayCutl
+Cleanup: PutAwayFood PutAwayCutl 
+Cleanup: PutAwayFood 
+Cleanup: PutAwayFood 
+Cleanup: PutAwayFood PutAwayCutl 
+Cleanup: PutAwayCutl 
+Cleanup: PutAwayCutl 
+Cleanup: PutAwayCutl 

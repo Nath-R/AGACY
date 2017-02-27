@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix owl: <http://www.w3.org/2002/07/owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix AGACY: <http://nara.wp.tem-tsp.eu/ontologies/AGACY.owl#>
+
+[ruleEating:
+	(?user AGACY:hasEvent ?event1),
+	(?event1 rdf:type AGACY:Event),
+	(?event1 AGACY:hasValue "MealReady"),
+	(?event1 AGACY:relatedTime ?time1),
+	(?event1 AGACY:uncertaintyLevel ?ulvl1),
+	(?user AGACY:hasEvent ?event2),
+	(?event2 rdf:type AGACY:Event),
+	(?event2 AGACY:hasValue "SitInKitchen"),
+	(?event2 AGACY:relatedTime ?time2),
+	(?event2 AGACY:uncertaintyLevel ?ulvl2),
+	lessThan(?time1, ?time2),
+	lessThan(difference(?time1, ?time2), 5),
+	makeTemp(?action)
+	->
+	(?action rdf:type AGACY:Action),
+	(?user AGACY:hasAction ?action),
+	(?action AGACY:hasValue "Eating"),
+	(?action AGACY:relatedTime ?time2),
+	(?action AGACY:composedOf ?event1),
+	(?event1 AGACY:partOf ?action),
+	(?action AGACY:composedOf ?event2),
+	(?event2 AGACY:partOf ?action),
+	(?action AGACY:uncertaintyLevel min(?ulvl1,?ulvl2) )
+	]
+	
+[ruleEatingSimpl:
+	(?user AGACY:hasEvent ?event1),
+	(?event1 rdf:type AGACY:Event),
+	(?event1 AGACY:hasValue "MealReady"),
+	(?event1 AGACY:relatedTime ?time1),
+	(?event1 AGACY:uncertaintyLevel ?ulvl1),
+	(?user AGACY:hasEvent ?event2),
+	(?event2 rdf:type AGACY:Event),
+	(?event2 AGACY:hasValue "SitInKitchen"),
+	(?event2 AGACY:relatedTime ?time2),
+	(?event2 AGACY:uncertaintyLevel ?ulvl2),
+	makeTemp(?action)
+	->
+	(?action rdf:type AGACY:Action),
+	(?user AGACY:hasAction ?action),
+	(?action AGACY:hasValue "Eating"),
+	(?action AGACY:relatedTime ?time2),
+	(?action AGACY:composedOf ?event1),
+	(?event1 AGACY:partOf ?action),
+	(?action AGACY:composedOf ?event2),
+	(?event2 AGACY:partOf ?action),
+	(?action AGACY:uncertaintyLevel ?ulvl1 )
+]
+
+[ruleEatingSimpl2:
+	(?user AGACY:hasEvent ?event1),
+	(?event1 rdf:type AGACY:Event),
+	(?event1 AGACY:hasValue "MealReady"),
+	(?event1 AGACY:relatedTime ?time1),
+	(?event1 AGACY:uncertaintyLevel ?ulvl1)
+	->
+	(?action rdf:type AGACY:Action),
+	(?user AGACY:hasAction ?action),
+	(?action AGACY:hasValue "Feasting"),
+	(?action AGACY:relatedTime ?time1),
+	(?action AGACY:composedOf ?event1),
+	(?event1 AGACY:partOf ?action),
+	(?action AGACY:uncertaintyLevel ?ulvl1 )
+]
+
+[ruleToasting:
+	(?user AGACY:hasEvent ?event1),
+	(?event1 rdf:type AGACY:Event),
+	(?event1 AGACY:hasValue "toasterUsed"),
+	(?event1 AGACY:relatedTime ?time1),
+	(?event1 AGACY:uncertaintyLevel ?ulvl1)
+	makeTemp(?action)
+	->
+	(?action rdf:type AGACY:Action),
+	(?user AGACY:hasAction ?action),
+	(?action AGACY:hasValue "Toasting"),
+	(?action AGACY:relatedTime ?time1),
+	(?action AGACY:composedOf ?event1),
+	(?event1 AGACY:partOf ?action),
+	(?action AGACY:uncertaintyLevel ?ulvl1 )
+]
